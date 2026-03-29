@@ -5,7 +5,7 @@ The cleanest way to run this application is to use uv as a dependency management
 It generates a virtual environment per application and doesn't require you to download
 all project dependencies on your machine. The project dependencies live inside  pyproject.toml
 
-1. Run: ```pip3 install uv```
+1. Install ```uv``` with your package manager of choice: https://docs.astral.sh/uv/getting-started/installation/#pypi
 2. Inside your IDE, point your python interpretor to .venv/bin/python
 3. Run: ```uv sync``` (installs packages in the virtual env and generates the lock file)
 4. Run: ```source .venv/bin/activate``` --> prepends your os' PATH variable with the .venv/bin/python location so it finds that python version first when running any python command
