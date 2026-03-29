@@ -16,3 +16,8 @@ all project dependencies on your machine. The project dependencies live inside  
 If you don't want to go through uv (Ie: you're running everything via pip) then install all dependencies 
 with: ```pip install -r requirements.txt```
 This implies that the requirements file is up to date. I will periodically update it, but I highly recommend using uv.
+
+Extra deps/apps I use:
+1. PyCharm for app development
+2. Postman for api testing
+   
