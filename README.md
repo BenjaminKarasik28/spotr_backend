@@ -7,8 +7,8 @@ all project dependencies on your machine. The project dependencies live inside  
 
 1. Install ```uv``` with your package manager of choice: https://docs.astral.sh/uv/getting-started/installation/#pypi
 2. If you are running this inside the IDE terminal, point your Python interpretor to .venv/bin/python
-3. Run: ```uv sync``` (installs exact versions of packages from the lock file exist and removes extras) Typically you'd run this after you clone this project, or run ```uv add <dependency>```, or want a fresh app
-4. You're ready to run the app! ```uv run uvicorn app.main:app --reload```
+3. Run: ```uv sync``` (installs exact versions of packages from the lock file and removes extras) Typically you'd run this after you clone this project, run ```uv add <dependency>```, or want a fresh app
+4. You're ready to run the app! ```uv run uvicorn app.main:app --reload``` NOTE: run this in the root of the project or else it can't find app.main. 
 
 
 If you don't want to go through uv (Ie: you're running everything via pip) then install all dependencies 
