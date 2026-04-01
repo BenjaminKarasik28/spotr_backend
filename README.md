@@ -6,7 +6,7 @@ It generates a virtual environment per application and doesn't require you to do
 all project dependencies on your machine. The project dependencies live inside  pyproject.toml
 
 1. Install ```uv``` with your package manager of choice: https://docs.astral.sh/uv/getting-started/installation/#pypi
-2. Inside your IDE, point your python interpretor to .venv/bin/python
+2. If you are running this inside the IDE terminal, point your Python interpretor to .venv/bin/python
 3. Run: ```uv sync``` (installs exact versions of packages from the lock file exist and removes extras) Typically you'd run this after you clone this project, or run ```uv add <dependency>```, or want a fresh app
 4. You're ready to run the app! ```uv run uvicorn app.main:app --reload```
 
@@ -14,6 +14,7 @@ all project dependencies on your machine. The project dependencies live inside  
 If you don't want to go through uv (Ie: you're running everything via pip) then install all dependencies 
 with: ```pip install -r requirements.txt```
 This implies that the requirements file is up to date. I will periodically update it, but I highly recommend using uv.
+```uv run uvicorn app.main:app --reload``` won't work here, you'll need the pip/pip3 equivalent.
 
 Extra deps/apps I use:
 1. PyCharm for app development
